@@ -1,0 +1,40 @@
+{
+	"name": "merkle-tree-airdrop",
+	"version": "1.0.0",
+	"description": "Airdrop Merkle Tree",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"test": "npx hardhat test",
+		"compile": "npx hardhat compile",
+		"deploy:rinkeby": "npx hardhat --network rinkeby deploy",
+		"deploy:mainnet": "npx hardhat --network mainnet deploy",
+		"verify:rinkeby": "npx hardhat --network rinkeby etherscan-verify",
+		"verify:mainnet": "npx hardhat --network mainnet etherscan-verify"
+	},
+	"devDependencies": {
+		"@openzeppelin/contracts": "^4.4.2",
+		"@typechain/ethers-v5": "^7.1.0",
+		"@typechain/hardhat": "^2.3.0",
+		"@types/chai": "^4.2.19",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "^15.12.5",
+		"chai": "^4.3.4",
+		"chai-ethers": "^0.0.1",
+		"csv-parse": "^4.16.3",
+		"dotenv": "^10.0.0",
+		"ethers": "^5.4.0",
+		"hardhat": "^2.4.1",
+		"hardhat-deploy": "^0.9.2",
+		"hardhat-deploy-ethers": "^0.3.0-beta.10",
+		"mocha": "^9.0.1",
+		"ts-node": "^10.0.0",
+		"typechain": "^5.1.2",
+		"typescript": "^4.3.4"
+	},
+	"dependencies": {
+		"@types/random-seed": "^0.3.3",
+		"random-seed": "^0.3.0",
+		"utility-types": "^3.10.0"
+	}
+}
